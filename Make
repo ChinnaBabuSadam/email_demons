@@ -1,0 +1,16 @@
+Make file:
+all: maintest
+
+Utils.o: Utils.c
+	gcc -c Utils.c
+
+Client: Utils.o
+	gcc ClientMain.c -o Client Utils.o
+
+Server: Utils.o
+	gcc ServerMain.c -o Server Utils.o
+
+maintest: Server Client
+
+clear:
+	rm *.o Server Client
