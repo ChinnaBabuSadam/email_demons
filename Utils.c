@@ -2,14 +2,14 @@
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-#define CONFIG_FILE "userList.txt"
+#define CONFIG_FILE "users.txt"
 #define MAX_LINE 500
 #define MAX_CONTENT 10000
 #define EMAIL_CONTENT 4000
 #define ATTACH_CONTENT 5000
 #define SMALL_STRING 50
 #define MAX_STRING 250
-//#define CONFIG_FILE "/Users/chinnababusadam/Documents/UHCL/Test Function/Test Function/userList.txt"
+//#define CONFIG_FILE "/Users/chinnababusadam/Documents/UHCL/Test Function/Test Function/users.txt"
 
 int CheckIfUserExist(char *userName) {
 	FILE *fp;
